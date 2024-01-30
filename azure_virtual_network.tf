@@ -19,7 +19,7 @@ module "azure_virtual_network" {
 
 # Can be handled also by tflint
 module "validation_azure_virtual_network" {
-  source = "../../azure/validation_azure_virtual_network"
+  source = "../modules/azure/validation_azure_virtual_network"
 
   for_each = var.azure_virtual_network
 
