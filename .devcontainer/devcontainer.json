@@ -1,0 +1,14 @@
+{
+  "image": "mcr.microsoft.com/azterraform:latest",
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "go.useLanguageServer": true
+      },
+      "extensions": [
+        "hashicorp.terraform"
+      ]
+    }
+  }
+}
