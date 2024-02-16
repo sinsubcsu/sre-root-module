@@ -6,9 +6,9 @@ module "azure_static_site" {
 
   # Enforcing value.
   enable_telemetry = true
-  location         = "southeastasia"
 
   # Coming from variables
+  location            = each.value.location    
   name                = each.value.name
   resource_group_name = each.value.resource_group_name
   sku_size            = each.value.sku_size
